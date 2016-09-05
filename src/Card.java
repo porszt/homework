@@ -41,7 +41,37 @@ public class Card {
 
     @Override
     public String toString(){
-        //// TODO: 02.09.16  
+        return rankConverter(this.rank) + "-" + suitConverter(this.suit);
+    }
+
+    public String rankConverter(int rank){
+        String convertedRank = null;
+        switch (rank){
+            case 1: convertedRank = "Ace";
+                break;
+            case 11: convertedRank = "Jack";
+                break;
+            case 12: convertedRank = "Queen";
+                break;
+            case 13: convertedRank = "King";
+                break;
+        }
+        return convertedRank;
+    }
+
+    public String suitConverter(int suit){
+        String convertedSuit = null;
+        switch (suit){
+            case 1: convertedSuit = "Clubs";
+                break;
+            case 2: convertedSuit = "Diamonds";
+                break;
+            case 3: convertedSuit = "Hearts";
+                break;
+            case 4: convertedSuit = "Spades";
+                break;
+        }
+        return convertedSuit;
     }
 }
 
