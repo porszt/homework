@@ -1,3 +1,4 @@
+package Cards;
 
 public enum Ranks {
     ACE("Ace"), JACK("Jack"), QUEEN("Queen"), KING("King");

@@ -1,3 +1,6 @@
+import Cards.Card;
+import Cards.Ranks;
+import Cards.Suits;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;

@@ -1,3 +1,4 @@
+package Cards;
 
 public enum Suits {
     CLUBS("Clubs"), DIAMONDS("Diamonds"), HEARTS("Hearts"), SPADES("Spades");
